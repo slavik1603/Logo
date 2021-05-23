@@ -295,10 +295,8 @@ li {
     text-align: center;
     position: relative;
 }
-.product-image img {
-    width: 110px;
-    height: 130px;
-    padding-top: 45px;
+.picture {
+    padding: 45px;
 }
 
 .zoom, .like, .like2 {
@@ -306,22 +304,24 @@ li {
     width: 30px;
     height: 30px;
     border: 1px solid #2c71b8;
-    
-}
-.product-image > .zoom {
     position: absolute;
-    margin-left: 210px;
-    margin-top: -130px;
 }
-.product-image > .like {
+.zoom {
     position: absolute;
-    margin-left: 210px;
-    margin-top: -90px;
+    right: 10px;
+    top: 10px;
 }
-.product-image > .like2 {
+.like {
+    margin-top: 10px;
     position: absolute;
-    margin-left: 210px;
-    margin-top: -90px;
+    right: 10px;
+    top: 40px;
+}
+.like2 {
+    margin-top: 10px;
+    position: absolute;
+    right: 10px;
+    top: 40px;
 }
 .like {
     background-image: url(like_b.png);
