@@ -88,7 +88,8 @@
                         <div class="col-md-3">
                             <form class="cart">
                                 <input class="cart1" type="text" placeholder="">
-                                <button class="four">4</button>
+                                <button class="four"
+                                id="products-count">0</button>
                             </form>
                         </div>
                     </div>
@@ -226,6 +227,12 @@
                                     <div class="product-price">
                                         <p><span>$599<sup>25</sup></span></p> 
                                     </div>
+
+                                    <div class="product-quanity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
+                                    </div>
                                     <button class="more-details">MORE DETAILS</button>
                                     <button class="add-to-cart">ADD TO CART</button>
                                 </div>
@@ -240,7 +247,7 @@
                                     <div class="zoom">
                                        
                                     </div>
-                                    <div class="like">
+                                    <div class="like liked">
                                        
                                     </div>
                                 </div>
@@ -482,5 +489,21 @@
             </div>
         </div>
     </footer>
+    <div class="modal">
+        <div class="modal-block">
+            <form>
+                <div class="btn-close">X</div>
+                <h3>Please call for more details</h3>
+                <div class="form-field">
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="form-field">
+                    <input type="text" placeholder="Your phone">
+                </div>
+                <button>Please call</button>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
 </body>
 </html>
