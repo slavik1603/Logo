@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logo</title>
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
@@ -99,6 +101,13 @@
     </header>    
     <main class="main">
         <div class="container">
+            <div class="row">
+                <div class="slider-block">
+                    <div>Slider 1</div>
+                    <div>Slider 2</div>
+                    <div>Slider 3</div>
+                  </div>
+            </div>
             <div class="row">
                 <div class="col-md-25">
                     <div class="filter">
@@ -227,7 +236,6 @@
                                     <div class="product-price">
                                         <p><span>$599<sup>25</sup></span></p> 
                                     </div>
-
                                     <div class="product-quanity">
                                         <button class="decrement-button">-</button>
                                         <input type="text" value="1" readonly>
@@ -262,6 +270,11 @@
                                     <div class="product-price">
                                         <p><span>$1250<sup>99</sup></span></p> 
                                     </div>
+                                    <div class="product-quanity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
+                                    </div>
                                     <button class="more-details">MORE DETAILS</button>
                                     <button class="add-to-cart">ADD TO CART</button>
                                 </div>
@@ -290,6 +303,11 @@
                                     </div>
                                     <div class="product-price">
                                         <p><span>$399<sup>50</sup></span></p> 
+                                    </div>
+                                    <div class="product-quanity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
                                     </div>
                                     <button class="more-details">MORE DETAILS</button>
                                     <button class="add-to-cart">ADD TO CART</button>
@@ -320,6 +338,11 @@
                                     <div class="product-price">
                                         <p><span>$599<sup>25</sup></span></p> 
                                     </div>
+                                    <div class="product-quanity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
+                                    </div>
                                     <button class="more-details">MORE DETAILS</button>
                                     <button class="add-to-cart">ADD TO CART</button>
                                 </div>
@@ -349,6 +372,11 @@
                                     <div class="product-price">
                                         <p><span>$1250<sup>99</sup></span></p> 
                                     </div>
+                                    <div class="product-quanity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
+                                    </div>
                                     <button class="more-details">MORE DETAILS</button>
                                     <button class="add-to-cart">ADD TO CART</button>
                                 </div>
@@ -361,10 +389,8 @@
                                         <img src="Phone.png" alt="">
                                     </div>
                                     <div class="zoom">
-                                       
                                     </div>
                                     <div class="like">
-                                       
                                     </div>
                                 </div>
                                 <div class="product-body">
@@ -377,6 +403,11 @@
                                     </div>
                                     <div class="product-price">
                                         <p><span>$399<sup>50</sup></span></p> 
+                                    </div>
+                                    <div class="product-quanity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
                                     </div>
                                     <button class="more-details">MORE DETAILS</button>
                                     <button class="add-to-cart">ADD TO CART</button>
@@ -407,6 +438,11 @@
                                     <div class="product-price">
                                         <p><span>$599<sup>25</sup></span></p> 
                                     </div>
+                                    <div class="product-quanity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
+                                    </div>
                                     <button class="more-details">MORE DETAILS</button>
                                     <button class="add-to-cart">ADD TO CART</button>
                                 </div>
@@ -435,6 +471,11 @@
                                     </div>
                                     <div class="product-price">
                                         <p><span>$1250<sup>99</sup></span></p> 
+                                    </div>
+                                    <div class="product-quanity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
                                     </div>
                                     <button class="more-details">MORE DETAILS</button>
                                     <button class="add-to-cart">ADD TO CART</button>
@@ -465,6 +506,11 @@
                                     <div class="product-price">
                                         <p><span>$399<sup>50</sup></span></p> 
                                     </div>
+                                    <div class="product-quanity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
+                                    </div>
                                     <button class="more-details">MORE DETAILS</button>
                                     <button class="add-to-cart">ADD TO CART</button>
                                 </div>
@@ -494,16 +540,19 @@
             <form>
                 <div class="btn-close">X</div>
                 <h3>Please call for more details</h3>
-                <div class="form-field">
+                <div class="form-fields">
                     <input type="text" placeholder="Your name">
                 </div>
-                <div class="form-field">
+                <div class="form-fields">
                     <input type="text" placeholder="Your phone">
                 </div>
-                <button>Please call</button>
+                <button class="call">Please call</button>
             </form>
         </div>
     </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
